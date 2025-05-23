@@ -1,0 +1,17 @@
+name: My Email Step Action # You can name your workflow
+
+on: [push] # Triggers the workflow on every push to any branch.
+           # You can also use workflow_dispatch to trigger it manually:
+           # on:
+           #   workflow_dispatch:
+
+jobs:
+  test: # This is the job name, as in your example
+    runs-on: ubuntu-latest # Specifies the runner environment
+    steps:
+      - name: 23f1001038@ds.study.iitm.ac.in # This step name includes the email address
+        run: echo "Hello, world! This step has an email in its name."
+
+      # You can add other steps here if needed
+      - name: Another step
+        run: echo "This is another step in the job."
